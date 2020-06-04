@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <ImageView
+            android:id="@+id/hotplace3_image"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/hotplace_3"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/hotplace3_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:text="날씨 : "
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            app:layout_constraintLeft_toLeftOf="@+id/hotplace3_image"
+            app:layout_constraintTop_toBottomOf="@+id/hotplace3_image" />
+        <ImageView
+            android:id="@+id/hot3_weatherimage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/hotplace3_weather"
+            app:layout_constraintLeft_toRightOf="@+id/hotplace3_weather" />
+        <TextView
+            android:id="@+id/hot3_receive"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/hot3_weatherimage"
+            app:layout_constraintStart_toEndOf="@+id/hot3_weatherimage" />
+
+        <TextView
+            android:id="@+id/hotplace3_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/hotplace3_weather"
+            app:layout_constraintLeft_toRightOf="@+id/hotplace3_weather" />
+
+        <TextView
+            android:id="@+id/hotplace3_canfish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="낚을수있는어종"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="@+id/hotplace3_weather"
+            app:layout_constraintTop_toBottomOf="@+id/hotplace3_weather" />
+
+
+        <ImageButton
+            android:id="@+id/hotplace3_fish2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#00000000"
+            android:src="@drawable/fish2_round"
+            app:layout_constraintLeft_toLeftOf="@+id/hotplace3_canfish"
+            app:layout_constraintTop_toBottomOf="@+id/hotplace3_canfish" />
+
+        <ImageButton
+            android:id="@+id/hotplace3_fish6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:background="#00000000"
+            android:src="@drawable/fish6_round"
+            app:layout_constraintLeft_toRightOf="@+id/hotplace3_fish2"
+            app:layout_constraintTop_toBottomOf="@+id/hotplace3_canfish" />
+
+
+        <TextView
+            android:id="@+id/hotplace3_denger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="위험도"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="@+id/hotplace3_fish2"
+            app:layout_constraintTop_toBottomOf="@+id/hotplace3_fish2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/star"
+            app:layout_constraintLeft_toLeftOf="@+id/hotplace3_denger"
+            app:layout_constraintTop_toBottomOf="@+id/hotplace3_denger" />
+
+        <ImageView
+            android:id="@+id/hotplace3_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/star"
+            app:layout_constraintLeft_toLeftOf="@+id/hotplace3_denger"
+            app:layout_constraintTop_toBottomOf="@+id/hotplace3_denger" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toLeftOf="@+id/hotplace3_star"
+            app:layout_constraintTop_toBottomOf="@+id/hotplace3_star"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

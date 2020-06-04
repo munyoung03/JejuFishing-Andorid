@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/test_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/hotplace_1"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/test_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="날씨 : "
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="@+id/test_image"
+        app:layout_constraintTop_toBottomOf="@+id/test_image" />
+
+    <ImageView
+        android:id="@+id/test_weatherimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/test_weather"
+        app:layout_constraintLeft_toRightOf="@+id/test_weather" />
+    <TextView
+        android:id="@+id/test_receive"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/test_weatherimage"
+        app:layout_constraintStart_toEndOf="@+id/test_weatherimage" />
+
+    <TextView
+        android:id="@+id/test_canfish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="낚을수있는어종"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@+id/test_weather"
+        app:layout_constraintTop_toBottomOf="@+id/test_weather" />
+
+
+    <ImageButton
+        android:id="@+id/test_fish7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#00000000"
+        android:src="@drawable/fish7_round"
+        app:layout_constraintLeft_toLeftOf="@+id/test_canfish"
+        app:layout_constraintTop_toBottomOf="@+id/test_canfish" />
+
+    <ImageButton
+        android:id="@+id/test_fish8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="12dp"
+        android:background="#00000000"
+        android:src="@drawable/fish8_round"
+        app:layout_constraintLeft_toLeftOf="@+id/test_canfish"
+        app:layout_constraintTop_toBottomOf="@+id/test_canfish" />
+
+    <ImageButton
+        android:id="@+id/test_fish4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:src="@drawable/fish4_round"
+        app:layout_constraintLeft_toLeftOf="@+id/test_canfish"
+        app:layout_constraintTop_toBottomOf="@+id/test_canfish" />
+
+    <TextView
+        android:id="@+id/test_denger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="위험도"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@+id/test_fish7"
+        app:layout_constraintTop_toBottomOf="@+id/test_fish7" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/star"
+        app:layout_constraintLeft_toLeftOf="@+id/test_denger"
+        app:layout_constraintTop_toBottomOf="@+id/test_denger" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/star"
+        app:layout_constraintLeft_toLeftOf="@+id/test_denger"
+        app:layout_constraintTop_toBottomOf="@+id/test_denger" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/star"
+        app:layout_constraintLeft_toLeftOf="@+id/test_denger"
+        app:layout_constraintTop_toBottomOf="@+id/test_denger" />
+
+    <ImageView
+        android:id="@+id/test_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/star"
+        app:layout_constraintLeft_toLeftOf="@+id/test_denger"
+        app:layout_constraintTop_toBottomOf="@+id/test_denger" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="@+id/test_star"
+        app:layout_constraintTop_toBottomOf="@+id/test_star"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

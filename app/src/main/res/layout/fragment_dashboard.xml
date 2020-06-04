@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dashdord"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/hot_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/get"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/hot_button1"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/hotplace1_round"
+        android:paddingLeft="15dp"
+        android:text="히오등대 방파제"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/hot_image"
+        app:layout_constraintStart_toStartOf="@+id/hot_image"
+        app:layout_constraintTop_toBottomOf="@+id/hot_image" />
+
+    <Button
+        android:id="@+id/hot_button2"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/hotplace2_round"
+        android:paddingLeft="15dp"
+        android:text="애월향 방파제"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hot_button1" />
+    <Button
+        android:id="@+id/hot_button3"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/hotplace3_round"
+        android:paddingLeft="15dp"
+        android:text="구엄리 방파제"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/hot_button2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/hot_button3"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

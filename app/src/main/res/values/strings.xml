@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">final</string>
+    <string name="title_home">날씨</string>
+    <string name="title_dashboard">핫플레이스</string>
+    <string name="title_notifications">어종</string>
+    <string name="title_four">배</string>
+    <string name="title_main">메인</string>
+</resources>

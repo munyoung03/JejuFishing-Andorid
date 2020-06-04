@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.afinal">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Hotplace2"/>
+        <activity android:name=".Hotplace3"/>
+        <activity android:name=".Hotplace1" />
+        <activity android:name=".fish.Bang"/>
+        <activity android:name=".fish.Cham"/>
+        <activity android:name=".fish.Defender"/>
+        <activity android:name=".fish.Dom"/>
+        <activity android:name=".fish.Galchi"/>
+        <activity android:name=".fish.Gam"/>
+        <activity android:name=".fish.Gwanga"/>
+        <activity android:name=".fish.Nooa"/>
+        <activity android:name=".fish.Omega3"/>
+        <activity android:name=".fish.Poison"/>
+        <activity android:name=".fish.Ssom"/>
+        <activity android:name=".fish.Stone"/>
+    </application>
+</manifest>
